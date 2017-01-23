@@ -47,7 +47,7 @@ class MainHandler(webapp2.RequestHandler):
     	number_paragraph = "<p>" + number_sentence + "</p>"
 
 
-    	cookie_again_button = "<a href='.'><button style = 'background-color:purple; color:white;'>Another cookie please!</button></a>"
+    	cookie_again_button = "<a href='.'><button style = 'background-color:purple; color:white; padding:5px; border-radius:5px;'>Another cookie please!</button></a>"
 
     	content = header + fortune_paragraph + number_paragraph +cookie_again_button
 
