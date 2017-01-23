@@ -31,9 +31,8 @@ def getRandomFortune():
 	]
 
 	#randomly select one of the fortunes
-
-	index = random.randint(0, 7)
-	return fortunes[index]
+	fortune = random.choice(fortunes)
+	return fortune
 
 class MainHandler(webapp2.RequestHandler):
     def get(self):
@@ -48,7 +47,7 @@ class MainHandler(webapp2.RequestHandler):
     	number_paragraph = "<p>" + number_sentence + "</p>"
 
 
-    	cookie_again_button = "<a href='.'><button>Another cookie please!</button></a>"
+    	cookie_again_button = "<a href='.'><button style = 'background-color:purple; color:white;'>Another cookie please!</button></a>"
 
     	content = header + fortune_paragraph + number_paragraph +cookie_again_button
 
